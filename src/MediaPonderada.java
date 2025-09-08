@@ -38,7 +38,11 @@ public class MediaPonderada {
     }
 
     public void realizarCalculos(){
-    notaFinal= (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)/ (peso1 + peso2 + peso3);
+    // notaFinal= (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)/ (peso1 + peso2 + peso3); CLEAN CODE.
+        double somaNota= (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3);
+        double somaNotapeso= (peso1 + peso2 + peso3);
+        notaFinal= somaNota / somaNotapeso;
+
     }
     public void exibirResultado(){
 
