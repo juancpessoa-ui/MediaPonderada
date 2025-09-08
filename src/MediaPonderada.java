@@ -34,15 +34,16 @@ public class MediaPonderada {
 
         System.out.println(" Peso 3:");
         peso3= leitor.nextDouble();
+        //realizarCalculos();
     }
 
     public void realizarCalculos(){
-    notaFinal= (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)/ (peso1 + peso2 + peso3)
+    notaFinal= (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)/ (peso1 + peso2 + peso3);
     }
     public void exibirResultado(){
-        obterDados();// sequencia de execução
+
         realizarCalculos();
-        System.out.println(" ");
+        System.out.println(" A media ponderada do aluno " + nomeAluno + " é de " + notaFinal);
 
 
     }
